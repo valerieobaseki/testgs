@@ -4,7 +4,7 @@ function testGS(){
     fetch(url)
     .then(d => d.json())
     .then(d => {
-    document.getElementById("app").textContent = d[0].data.first;
+    document.getElementById("app").textContent = d[0].data[1].first;
     });
 
 
